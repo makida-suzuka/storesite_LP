@@ -288,3 +288,65 @@ footer
     font-size: 0.7rem;
 }
 
+@media screen and (max-width: 768px){
+
+    /*--------------------------------------
+    header
+    ---------------------------------------*/
+    #header .pc-show{
+        display: none;
+    }
+    #header{
+        width: 100%;
+    }
+    #header .sp-show{
+        height: 65vh;
+        width: 100%;
+        display: block;
+        background-image: url(img/mainvisual-sp.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .global-menu{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+    }
+    .global-menu .logo{
+        margin: 0;
+        left: 87vw;
+        padding: 30px;
+    }
+    .global-menu nav{
+        padding: 30px;
+    }
+    nav ul{
+        display: flex;
+        padding: 0;
+    }
+    nav ul li{
+        padding-left: 10px;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .online-shop a{
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        color: #fff;
+        background-color: rgba(255,255,255,0.2);
+        padding: 20px;
+        border: 1px solid #fff;
+    }
+    .online-shop{
+        display: inline-block;
+        padding: 8px;
+        background-color: rgba(255,255,255,0.2);
+        margin-left: 50px;
+        margin-top: 10vw;
+    }
+
+}
