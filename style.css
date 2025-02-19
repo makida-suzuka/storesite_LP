@@ -493,5 +493,8 @@ footer
     .copyright{
         font-size: 0.6rem;
     }
+    .store-info{
+        color: #fff;
+    }
 
 }
