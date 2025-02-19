@@ -2,17 +2,17 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 /*Google font*/
-.noto-sans-jp-uniquifier{
-    font-family: "Noto Sans JP", serif;
+.noto-serif-jp-uniquifier{
+    font-family: "Noto Serif JP", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-}
+  }
 html{
     font-size: 100%;
-    font-family: serif;
 }
 body{
+    font-family: "Noto Serif JP", serif;
     font-size: 0.9rem;
     margin: 0;
     padding: 0;
@@ -47,7 +47,6 @@ li{
 }
 .title-en{
     font-size: 1rem;
-    font-family: serif;
     font-weight: 400;
 }
 main{
