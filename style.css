@@ -32,9 +32,9 @@ li{
     line-height: 1px;
     margin-right: 60px;
 } */
-.logo a {
+/* .logo a {
     display: block;
-}
+} */
 .section-title{
     display: flex;
     flex-direction: column;
@@ -65,48 +65,54 @@ header
     box-sizing:border-box;
     /* background-repeat: no-repeat; */
     height: 100vh;
+    position: relative;
+    writing-mode: vertical-rl;
 }
-.global-menu{
+/* .global-menu{
     width: 100%;
     display: flex;
     justify-content: flex-end;
-}
-.global-menu .logo{
+} */
+/* .global-menu .logo{
     margin: 0;
     padding: 30px;
-}
-.global-menu .logo img{
+} */
+.logo img{
     width: 40px;
 }
-.global-menu nav{
+/* .global-menu nav{
     padding: 30px;
-}
-nav ul{
+} */
+/* nav ul{
     display: flex;
     padding: 0;
-}
+} */
 nav ul li{
     padding-left: 25px;
-    -ms-writing-mode: tb-rl;
-	writing-mode: vertical-rl;
+    /* -ms-writing-mode: tb-rl; */
+	/* writing-mode: vertical-rl; */
 }
 nav ul li a{
     color: #fff;
 }
 .online-shop a{
-    -ms-writing-mode: tb-rl;
-	writing-mode: vertical-rl;
+    /* -ms-writing-mode: tb-rl; */
+	/* writing-mode: vertical-rl; */
     color: #fff;
+    display: block;
     /* background-color: rgba(255,255,255,0.2); */
-    padding: 20px;
+    padding: 30px 18px;
     border: 1px solid #fff;
 }
 .online-shop{
-    display: inline-block;
+    /* display: inline-block; */
+    position: absolute;
     padding: 8px;
     background-color: rgba(255,255,255,0.2);
-    margin-left: 50px;
-    margin-top: 10vw;
+    left: 40px;
+    bottom: 30px;
+    /* margin-left: 50px;
+    margin-top: 10vw; */
 }
 
 /*-------------------------------------------
@@ -295,47 +301,45 @@ footer
         margin-bottom: 40px;
         position: relative;
     }
-    .global-menu{
+    /* .global-menu{
         width: 100%;
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
-    }
-    .global-menu .logo{
+    } */
+    /* .global-menu .logo{
         text-align: end;
         padding: 0px;
         margin-left: 30px;
-    }
-    .global-menu nav{
+    } */
+    /* .global-menu nav{
         padding: 0 ;
-    }
-    nav ul{
+    } */
+    /* nav ul{
         display: flex;
         padding: 0;
         margin: 0px;
-    }
-    nav ul li{
+    } */
+    /* nav ul li{
         padding-left: 10px;
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
-    }
-    nav ul li a{
+    } */
+    /* nav ul li a{
         color: #fff;
-    }
+    } */
     .online-shop a{
-        -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
-        color: #fff;
-        padding: 12px;
-        border: 1px solid #fff;
+        display: block;
+        padding: 8px;
+        margin: 0 auto;
     }
     .online-shop{
-        position: absolute;
+        /* position: absolute;
         display: inline-block;
-        padding: 8px;
-        background-color: rgba(255,255,255,0.2);
-        margin: 0px;
-        top: 155vw;
+        padding: 20px;
+        margin: 0px; */
+        left: 20px;
+        bottom: 20px;
     }
 
     /*--------------------------------------
