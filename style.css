@@ -27,11 +27,11 @@ a:hover{
 li{
     list-style: none;
 }
-.logo {
+/* .logo {
     width: 100px;
     line-height: 1px;
     margin-right: 60px;
-}
+} */
 .logo a {
     display: block;
 }
@@ -60,16 +60,12 @@ header
 #header{
     width: 100%;
     margin-bottom: 200px;
-}
-#header .pc-show{
     background-image: url(img/mainvisual-pc.jpg);
     background-size: cover;
+    background-position: center top;
     box-sizing:border-box;
-    background-repeat: no-repeat;
-    height: 50vw;
-}
-#header .sp-show{
-    display: none;
+    /* background-repeat: no-repeat; */
+    height: 100vh;
 }
 .global-menu{
     width: 100%;
@@ -78,8 +74,10 @@ header
 }
 .global-menu .logo{
     margin: 0;
-    left: 87vw;
     padding: 30px;
+}
+.global-menu .logo img{
+    width: 40px;
 }
 .global-menu nav{
     padding: 30px;
@@ -100,7 +98,7 @@ nav ul li a{
     -ms-writing-mode: tb-rl;
 	writing-mode: vertical-rl;
     color: #fff;
-    background-color: rgba(255,255,255,0.2);
+    /* background-color: rgba(255,255,255,0.2); */
     padding: 20px;
     border: 1px solid #fff;
 }
@@ -116,7 +114,7 @@ nav ul li a{
 news
 ---------------------------------------------*/
 #news{
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
@@ -144,7 +142,7 @@ news
 value
 ---------------------------------------------*/
 #value{
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
@@ -181,7 +179,7 @@ value
 technology
 ---------------------------------------------*/
 #technology{
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -293,37 +291,31 @@ footer
     /*--------------------------------------
     header
     ---------------------------------------*/
-    #header .pc-show{
-        display: none;
-    }
     #header{
         width: 100%;
-    }
-    #header .sp-show{
-        height: 65vh;
-        width: 100%;
-        display: block;
         background-image: url(img/mainvisual-sp.jpg);
-        background-size: cover;
-        background-position: center;
+        padding: 20px;
+        margin-bottom: 40px;
+        position: relative;
     }
     .global-menu{
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
     .global-menu .logo{
-        margin: 0;
-        left: 87vw;
-        padding: 30px;
+        text-align: end;
+        padding: 0px;
+        margin-left: 30px;
     }
     .global-menu nav{
-        padding: 30px;
+        padding: 0 ;
     }
     nav ul{
         display: flex;
         padding: 0;
+        margin: 0px;
     }
     nav ul li{
         padding-left: 10px;
@@ -337,16 +329,167 @@ footer
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
         color: #fff;
-        background-color: rgba(255,255,255,0.2);
-        padding: 20px;
+        padding: 12px;
         border: 1px solid #fff;
     }
     .online-shop{
+        position: absolute;
         display: inline-block;
         padding: 8px;
         background-color: rgba(255,255,255,0.2);
-        margin-left: 50px;
-        margin-top: 10vw;
+        margin: 0px;
+        top: 155vw;
+    }
+
+    /*--------------------------------------
+    news
+    ---------------------------------------*/
+    #news{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        box-sizing: border-box;
+        margin-bottom: 40px;
+    }
+    #news .section-title .title-ja{
+        font-size: 1.9rem;
+    }
+    .news-list{
+        padding-top: 10px;
+        padding-right: 15px;
+    }
+    .news-list ul{
+        display: flex;
+        padding: 0px;
+    }
+    .news-list ul li{
+        padding: 0 10px;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        border-right: 1px solid #000;
+    } 
+    .news-list ul li p{
+        margin: 0;
+
+    }
+    .news-list ul li:nth-child(n + 4){
+        font-size: 0.7rem;
+        display: none;
+    }
+    .news-list ul li:first-child{
+        border-left: 1px solid #000;
+    }
+
+    /*--------------------------------------
+    value
+    ---------------------------------------*/
+    #value{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row-reverse;
+        box-sizing: border-box;
+        margin-bottom: 100px;
+    }
+    #value .section-title{
+        display: block;
+        margin: 0;
+    }
+    #value .section-title .title-ja{
+        font-size: 1.5rem;
+    }
+    #value .section-title .title-en{
+        display: none;
+    }
+    .value-section{
+        position: relative;
+    }
+    .value-img img{
+        width: 100%;
+    }
+    .value-text{
+        padding: 15px 45px;
+        color: #fff;
+        position: absolute;
+        background-color: hsla(56, 95%, 50%, 0.6);
+        left: -20px;
+        top: 220px;
+    }
+
+    /*-------------------------------------------
+    technology
+    ---------------------------------------------*/
+    #technology{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        margin-bottom: 100px;
+    }
+    #technology .section-title{
+        display: block;
+        margin: 0;
+    }
+    #technology .section-title .title-ja{
+        font-size: 1.5rem;
+    }
+    #technology .section-title .title-en{
+        display: none;
+    }
+    .technology-section{
+        position: relative;
+    }
+    .technology-img{
+        padding-top: 80px;
+        text-align: end;
+    }
+    .technology-img img{
+        width: 100%;
+    }
+    .technology-text{
+        padding: 15px 45px;
+        color: #fff;
+        position: absolute;
+        background-color: hsla(2, 59%, 37%, 0.6);
+        right: -20px;
+        top: 220px;
+    }
+
+    /*-------------------------------------------
+    access
+    ---------------------------------------------*/
+    #access{
+        /*map下の余白を無くすため*/
+        display: flex;
+        width: 100%;
+    }
+    #access iframe{
+        width: 100%;
+    }
+
+    /*-------------------------------------------
+    footer
+    ---------------------------------------------*/
+    .footer-logo{
+        margin:0 10px;
+    }
+    .footer-logo img{
+        width: 40px;
+    }
+    #footer{
+        padding: 40px 20px 30px 20px;
+    }
+    .hyphen{
+        text-orientation: upright;
+    }
+    .footer-right-menu ul li{
+        font-size: 0.9rem;
+        padding-left: 10px;
+    }
+    .copyright{
+        font-size: 0.6rem;
     }
 
 }
