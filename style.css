@@ -244,16 +244,15 @@ footer
     flex-direction: row-reverse;
 }
 .store-info{
-    -ms-writing-mode: tb-rl;
 	writing-mode: vertical-rl;
-    text-orientation: upright;
-}
-.hyphen{
     text-orientation: upright;
 }
 .footer-right-menu{
     display: flex;
     flex-direction: row-reverse;
+}
+.hyphen{
+    writing-mode: vertical-rl;
 }
 .footer-right-menu ul{
     -ms-writing-mode: tb-rl;
