@@ -276,8 +276,7 @@ footer
 .footer-left-menu p{
     margin: 0;
 }
-.footer-left-menu p:first-child::after{
-    content: "―";
+.yoko{
     writing-mode:horizontal-tb;
 }
 .copyright{
@@ -480,9 +479,6 @@ footer
     }
     #footer{
         padding: 40px 20px 30px 20px;
-    }
-    .hyphen{
-        text-orientation: upright;
     }
     .footer-right-menu ul li{
         font-size: 0.9rem;
